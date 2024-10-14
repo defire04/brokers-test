@@ -1,4 +1,4 @@
-package org.example.testrabbitmq.connection;
+package org.example.rabbitmq.event;
 
 import lombok.Data;
 

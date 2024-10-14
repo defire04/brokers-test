@@ -1,5 +1,7 @@
-package org.example.testrabbitmq.connection;
+package org.example.rabbitmq.controller;
 
+import org.example.rabbitmq.event.BranchOfficeEvent;
+import org.example.rabbitmq.publisher.BranchOfficePublisher;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +15,7 @@ public class BranchOfficeController {
         this.publisher = publisher;
     }
 
-    @PostMapping("/publish-event")
+    @PostMapping("/publish")
     public String publishEvent(@RequestBody BranchOfficeEvent event) {
         publisher.publishEvent(event);
         return "Event published successfully";

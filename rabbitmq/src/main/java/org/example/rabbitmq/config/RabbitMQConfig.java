@@ -1,4 +1,4 @@
-package org.example.testrabbitmq.connection;
+package org.example.rabbitmq.config;
 
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

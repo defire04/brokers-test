@@ -1,6 +1,6 @@
-package org.example.testrabbitmq.service1;
+package org.example.rabbitmq.listener;
 
-import org.example.testrabbitmq.connection.BranchOfficeEvent;
+import org.example.rabbitmq.event.BranchOfficeEvent;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;

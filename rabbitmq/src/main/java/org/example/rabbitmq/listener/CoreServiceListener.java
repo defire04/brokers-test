@@ -1,5 +1,6 @@
-package org.example.testrabbitmq.service2;
-import org.example.testrabbitmq.connection.BranchOfficeEvent;
+package org.example.rabbitmq.listener;
+
+import org.example.rabbitmq.event.BranchOfficeEvent;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
@@ -7,6 +8,7 @@ import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+
 @Component
 public class CoreServiceListener {
 
