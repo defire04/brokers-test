@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"  # Порт для RabbitMQ (для приложений)
+      - "15672:15672"  # Порт для веб-интерфейса RabbitMQ
+    environment:
+      RABBITMQ_DEFAULT_USER: admin  # Логин по умолчанию
+      RABBITMQ_DEFAULT_PASS: admin  # Пароль по умолчанию
